@@ -5,6 +5,7 @@ import Login from "./Components/Auth/Login";
 import Register from "./Components/Auth/Register";
 import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import DetailMusic from './Components/DetailMusic/DetailMusic';
 
 const App = () => {
   return (
@@ -20,6 +21,9 @@ const App = () => {
           </Route>
           <Route path='/register'>
               <Register/>
+          </Route>
+          <Route path='/music/:id'>
+              <DetailMusic />
           </Route>
           <Route path='*'>
               <div>Page 404 not found!</div>
